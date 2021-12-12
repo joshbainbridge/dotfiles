@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 LINKS=(
-	".ssh/config shh-config"
+	".ssh/config ssh-config"
 	".gitconfig git-config"
 	".tmux.conf tmux-config"
 	".vim vim-config"
