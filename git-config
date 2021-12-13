@@ -4,3 +4,5 @@
 [commit]
 	message = .gitmessage
 	template = .gitmessage
+[pull]
+	rebase = false
