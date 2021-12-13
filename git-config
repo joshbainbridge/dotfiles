@@ -2,7 +2,6 @@
 	name = Josh Bainbridge
 	email = josh.bainbridge@gmail.com
 [commit]
-	message = .gitmessage
 	template = .gitmessage
 [pull]
 	rebase = false
