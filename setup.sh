@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 LINKS=(
-	".ssh/config ssh-config"
 	".gitconfig git-config"
 	".tmux.conf tmux-config"
 	".vim vim-config"
 )
 
 MACOS_LINKS=(
+	".ssh/config ssh-config"
 	".zshrc zshrc-config"
 )
 
