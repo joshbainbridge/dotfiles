@@ -3,3 +3,4 @@ setopt HIST_IGNORE_DUPS
 export CMAKE_GENERATOR='Ninja'
 alias build='cmake --build build'
 alias install='cmake --install build'
+alias calc='python3 -q -i -c "from math import *"'
