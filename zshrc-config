@@ -1,6 +1,6 @@
 set -o ignoreeof
 setopt HIST_IGNORE_DUPS
-export CMAKE_GENERATOR='Ninja'
-alias build='cmake --build build'
-alias install='cmake --install build'
+alias setup='cmake --preset user'
+alias build='cmake --build --preset user'
+alias tests='ctest --preset user'
 alias calc='python3 -q -i -c "from math import *"'
