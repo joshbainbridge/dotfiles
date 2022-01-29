@@ -5,3 +5,5 @@
 	template = .gitmessage
 [pull]
 	rebase = false
+[alias]
+	graph = log --all --decorate --oneline --graph
