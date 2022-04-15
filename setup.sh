@@ -4,6 +4,7 @@ LINKS=(
 	".gitconfig git-config"
 	".tmux.conf tmux-config"
 	".vim vim-config"
+	".config/nvim neovim-config"
 )
 
 MACOS_LINKS=(
