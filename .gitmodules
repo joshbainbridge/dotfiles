@@ -1,3 +1,6 @@
 [submodule "vim-config"]
 	path = vim-config
 	url = https://github.com/joshbainbridge/vim-config.git
+[submodule "neovim-config"]
+	path = neovim-config
+	url = https://github.com/joshbainbridge/neovim-config.git
