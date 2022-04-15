@@ -28,5 +28,6 @@ set-option -g pane-base-index 1
 # Renumber windows sequentially after closing
 set-option -g renumber-windows on
 
-# Make sure the colours are consistent
-set-option -g default-terminal "screen-256color"
+# Enable RGB colour if running in xterm(1)
+set -g default-terminal "screen-256color"
+set -as terminal-features ",xterm*:RGB"
