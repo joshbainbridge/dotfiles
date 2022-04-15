@@ -6,4 +6,6 @@
 [pull]
 	rebase = false
 [alias]
-	graph = log --all --decorate --oneline --graph
+	graph = log --branches --decorate --oneline --graph
+[init]
+	defaultBranch = main
