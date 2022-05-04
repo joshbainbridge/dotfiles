@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 LINKS=(
+	".hushlogin hush-login"
 	".gitconfig git-config"
 	".tmux.conf tmux-config"
 	".config/nvim neovim-config"
