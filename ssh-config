@@ -9,4 +9,4 @@ Host raspberrypi
 
 Host jetsonnano
 	ForwardAgent yes
-	HostName 192.168.55.109
+	HostName 192.168.55.103
