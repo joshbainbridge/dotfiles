@@ -7,3 +7,5 @@ alias calc='python3 -q -i -c "from math import *"'
 export PS1='%B%F{green}%n@%m%f %F{yellow}%1~%f%b %# '
 export CLICOLOR='Yes'
 export FZF_DEFAULT_COMMAND='rg --files'
+
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
