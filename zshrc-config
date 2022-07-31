@@ -1,9 +1,10 @@
 set -o ignoreeof
 setopt HIST_IGNORE_DUPS
-alias setup='cmake --preset user'
-alias build='cmake --build --preset user'
-alias tests='ctest --preset user'
+alias setup='cmake --preset dev'
+alias build='cmake --build --preset dev'
+alias tests='ctest --preset dev'
 alias calc='python3 -q -i -c "from math import *"'
+alias tmux='tmux attach || tmux'
 export PS1='%B%F{green}%n@%m%f %F{yellow}%1~%f%b %# '
 export CLICOLOR='Yes'
 export FZF_DEFAULT_COMMAND='rg --files'
