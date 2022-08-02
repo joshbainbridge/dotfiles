@@ -1,6 +1,9 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator. Base on
 # template from https://github.com/alacritty/alacritty/releases.
 
+# macOS Big Sur updated the container style for app icons, an updated Alacritty
+# design can be found at https://github.com/alacritty/alacritty/issues/3926.
+
 window:
   title: Getting Shit Done
 
