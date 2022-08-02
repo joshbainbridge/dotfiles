@@ -43,8 +43,9 @@ colors:
     white:   '0xebdbb2'
 
 bell:
-  animation: EaseOut
-  duration: 200
+  animation: Ease
+  duration: 250
+  color: '#666666'
 
 key_bindings:
   - { key: Left,  mods: Alt,     chars: "\x1bb"          }
