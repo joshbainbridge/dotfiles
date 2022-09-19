@@ -15,5 +15,3 @@
 	format = ssh
 [tag]
 	gpgsign = true
-[gpg "ssh"]
-	allowedSignersFile = /Users/josh/.ssh/allowed_signers
