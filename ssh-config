@@ -10,3 +10,19 @@ Host raspberrypi
 Host jetsonnano
 	ForwardAgent yes
 	HostName 192.168.55.103
+
+Host work-external-proxy
+	HostName dmx.ldn.framestore.com
+	User jbainbri
+
+Host work-internal-proxy
+	HostName dmx.ldn.vfx.framestore.com
+	User jbainbri
+	ProxyJump work-external-proxy
+
+Host work
+	HostName sys1823
+	User jbainbri
+	ProxyJump work-internal-proxy
+	RequestTTY yes
+	RemoteCommand tmux new-session -A
