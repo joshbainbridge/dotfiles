@@ -14,11 +14,15 @@ Host jetsonnano
 Host work-external-proxy
 	HostName dmx.ldn.framestore.com
 	User jbainbri
+	HostkeyAlgorithms +ssh-rsa
+	PubkeyAcceptedAlgorithms +ssh-rsa
 
 Host work-internal-proxy
 	HostName dmx.ldn.vfx.framestore.com
 	User jbainbri
 	ProxyJump work-external-proxy
+	HostkeyAlgorithms +ssh-rsa
+	PubkeyAcceptedAlgorithms +ssh-rsa
 
 Host work
 	HostName sys1823
