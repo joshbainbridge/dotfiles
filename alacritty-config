@@ -2,17 +2,17 @@
 # template from https://github.com/alacritty/alacritty/releases.
 
 # macOS Big Sur updated the container style for app icons, an updated Alacritty
-# design can be found at https://github.com/alacritty/alacritty/issues/3926.
+# design can be found at https://github.com/alacritty/alacritty/issues/3926. A
+# copy of this file has been added here under the name 'Alacritty.icns'.
 
 window:
-  title: Getting Shit Done
+  title: Multipass
 
 font:
   normal:
     family: JetBrainsMono Nerd Font Mono
 
   size: 14.0
-  use_thin_strokes: false
 
 # Gruvbox dark color theme for Alacritty. Sourced from
 # https://github.com/eendroroy/alacritty-theme.
