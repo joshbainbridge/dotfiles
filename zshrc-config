@@ -1,8 +1,8 @@
 set -o ignoreeof
 setopt HIST_IGNORE_DUPS
-alias setup='cmake --preset dev'
-alias build='cmake --build --preset dev'
-alias tests='ctest --preset dev'
+alias setup='cmake --preset unix-dev'
+alias build='cmake --build --preset unix-dev'
+alias tests='ctest --preset unix-dev'
 alias calc='python3 -q -i -c "from math import *"'
 alias tmux='tmux new-session -A'
 export PS1='%B%F{green}%n@%m%f %F{yellow}%1~%f%b %# '
