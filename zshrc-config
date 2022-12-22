@@ -1,3 +1,6 @@
+# Prevent C-D from exiting shell
+setopt IGNOREEOF
+
 # Remove duplicate command history
 setopt HIST_IGNORE_DUPS
 
