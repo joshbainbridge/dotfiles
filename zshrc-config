@@ -1,12 +1,31 @@
-set -o ignoreeof
+# Remove duplicate command history
 setopt HIST_IGNORE_DUPS
+
+# Disable bell when listing options
+unsetopt LIST_BEEP
+
+# Enabled zsh auto-completion
+autoload -U compinit && compinit
+
+# Set the custom shell prompt
+export PS1='%B%F{green}%n@%m%f %F{yellow}%1~%f%b %# '
+
+# Enable coloured output for the ls command
+export CLICOLOR='Yes'
+
+# Set the default driver for fzf to ripgrep
+export FZF_DEFAULT_COMMAND='rg --files'
+
+# Add Homebrew LLVM installation to path
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+# CMake aliases
 alias setup='cmake --preset unix-dev'
 alias build='cmake --build --preset unix-dev'
 alias tests='ctest --preset unix-dev'
-alias calc='python3 -q -i -c "from math import *"'
-alias tmux='tmux new-session -A'
-export PS1='%B%F{green}%n@%m%f %F{yellow}%1~%f%b %# '
-export CLICOLOR='Yes'
-export FZF_DEFAULT_COMMAND='rg --files'
 
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+# Python aliased as calculator
+alias calc='python3 -q -i -c "from math import *"'
+
+# Default tmux to attach
+alias tmux='tmux new-session -A'
