@@ -5,6 +5,7 @@ LINKS=(
 	".gitconfig git-config"
 	".tmux.conf tmux-config"
 	".config/nvim neovim-config"
+	".config/helix helix-config"
 	".config/alacritty/alacritty.yml alacritty-config"
 )
 
