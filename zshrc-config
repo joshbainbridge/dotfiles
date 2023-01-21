@@ -19,16 +19,14 @@ export CLICOLOR='Yes'
 # Set the default driver for fzf to ripgrep
 export FZF_DEFAULT_COMMAND='rg --files'
 
+# Make default CMake generator Ninja
+export CMAKE_GENERATOR='Ninja'
+
 # Add Homebrew LLVM installation to path
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
-# CMake aliases
-alias setup='cmake --preset unix-dev'
-alias build='cmake --build --preset unix-dev'
-alias tests='ctest --preset unix-dev'
+# Set default visual editor
+export VISUAL='hx'
 
 # Python aliased as calculator
 alias calc='python3 -q -i -c "from math import *"'
-
-# Default tmux to attach
-alias tmux='tmux new-session -A'

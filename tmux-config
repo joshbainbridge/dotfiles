@@ -28,6 +28,22 @@ set-option -g pane-base-index 1
 # Renumber windows sequentially after closing
 set-option -g renumber-windows on
 
-# Enable RGB colour if running in xterm(1)
-set -g default-terminal "screen-256color"
-set -as terminal-features ",xterm*:RGB"
+# Set escape to not delay when using an editor
+set-option -sg escape-time 0
+
+# The tmux 256 color terminal descriptor allows applications to handle tmux
+# sessions, while supporting RGB colour. It also allows for italics which the
+# default screen 256 color descriptor does not support. The macOS database of
+# descriptors doesn't include tmux as the system's ncurses is too old. But you
+# can build the descriptor using the latest ncurses that comes with tmux on
+# homebrew. And then install it to ~/.terminfo using tic.
+
+# /opt/homebrew/opt/ncurses/bin/infocmp -x tmux-256color > ~/tmux-256color.src;
+# tic -x ~/tmux-256color.src;
+# rm ~/tmux-256color.src;
+
+# Set default terminal to be tmux and RGB compatible
+set-option -g default-terminal "tmux-256color"
+
+# Enable RGB colour option on external terminal
+set-option -sa terminal-overrides ',xterm-256color:RGB'
