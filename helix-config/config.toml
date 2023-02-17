@@ -15,3 +15,6 @@ hidden = false
 [editor.whitespace.render]
 space = "all"
 tab = "all"
+
+[keys.normal]
+C-r = ":reflow"
