@@ -7,6 +7,9 @@ setopt HIST_IGNORE_DUPS
 # Disable bell when listing options
 unsetopt LIST_BEEP
 
+# Add completion for rust toolchain
+fpath+=~/.zfunc
+
 # Enabled zsh auto-completion
 autoload -U compinit && compinit
 

@@ -1,17 +1,7 @@
 [user]
 	name = Josh Bainbridge
 	email = josh.bainbridge@gmail.com
-	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCdJphW7AG2oFNWlxJxaaFhWOeuJ4hVsMlbVtghy5O2fOvj9ozRBXBL44wAmzOlsBcWwdIdNAUfDtRWPAvG8Yp+d87GKSeZ++y5f2IZ6Y0hUN+hzwoR3ZjMkdr+jJPtB4m+IwIswgacuaBwev7m6SklNS+7fjkuCPsLaI2o422SK+TuXEFUIvBtB+MtoDCsuw1B20ZbalxlaZ22P/ldxp+hmP3lkuzzfe+3SGER4EBxwwLR68jQCn1WBmmCYspSA1EmdT/iregycqpCuEpGhhkhWn0xK0oFsPA7d6mIO7Xixx0mNSfJUPl3OtnewG7NOjxQTjN7PzD09BVpv3ZL3m7a0Z+nVnDAz0P1Fll6dFv/o548rtM99mCh/PuvY/9fKx/6J8meEfZ+9DWwJTgShptJsZikUxHpXWJ4VrJ5zYuuPMXoMkDPCuGKuJLUljSsKaUW0mCSFd/ZMm0At+Z2pmmZhzlXXw6u+R3VHyR42ZWBr4R6mQ0xUMgwsAm6OUhJrqJ+AtxUnn8P/nB4oALXa9ct+yUlqLckWvF6sYQa5sF9Qzg6FE6YId9Cgtc6qbeR864088Ix84u9vSYEQVRUVoXrYq/GjVOy+/QHQh6ZHLl3J4Jp/SDptT5LQhSwCRa751Ux66/4/nONcon7q56biE8OhBgvPYslmTHudlbHyXUKxQ== josh.bainbridge@gmail.com
-[commit]
-	template = .gitmessage
-	gpgsign = true
-[pull]
-	rebase = false
 [alias]
 	graph = log --branches --decorate --oneline --graph
 [init]
 	defaultBranch = main
-[gpg]
-	format = ssh
-[tag]
-	gpgsign = true

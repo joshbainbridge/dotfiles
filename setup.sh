@@ -6,7 +6,8 @@ LINKS=(
 	".tmux.conf tmux-config"
 	".config/nvim neovim-config"
 	".config/helix helix-config"
-	".config/alacritty/alacritty.yml alacritty-config"
+	".config/alacritty alacritty-config"
+	".config/zellij zellij-config"
 )
 
 MACOS_LINKS=(
