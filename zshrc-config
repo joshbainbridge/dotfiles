@@ -13,14 +13,8 @@ fpath+=~/.zfunc
 # Enabled zsh auto-completion
 autoload -U compinit && compinit
 
-# Set the custom shell prompt
-export PS1='%B%F{green}%n@%m%f %F{yellow}%1~%f%b %# '
-
 # Enable coloured output for the ls command
 export CLICOLOR='Yes'
-
-# Set the default driver for fzf to ripgrep
-export FZF_DEFAULT_COMMAND='rg --files'
 
 # Make default CMake generator Ninja
 export CMAKE_GENERATOR='Ninja'

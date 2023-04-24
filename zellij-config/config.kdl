@@ -14,6 +14,10 @@ keybinds clear-defaults=true {
         bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
         bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
         bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "H" { MovePane "Left"; SwitchToMode "Normal"; }
+        bind "L" { MovePane "Right"; SwitchToMode "Normal"; }
+        bind "J" { MovePane "Down"; SwitchToMode "Normal"; }
+        bind "K" { MovePane "Up"; SwitchToMode "Normal"; }
         bind "o" { FocusNextPane; }
         bind "d" { Detach; }
         bind "0" { GoToTab 0; SwitchToMode "Normal"; }
@@ -49,5 +53,13 @@ themes {
 }
 
 theme "gruvbox-dark"
+default_layout "compact"
 simplified_ui true
 mouse_mode false
+pane_frames false
+
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}

@@ -19,3 +19,6 @@ tab = "all"
 
 [keys.normal]
 C-r = ":reflow"
+
+[keys.insert]
+C-n = "completion"

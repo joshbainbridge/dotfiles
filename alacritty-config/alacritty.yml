@@ -6,7 +6,6 @@
 # copy of this file has been added here under the name 'Alacritty.icns'.
 
 window:
-  title: Multipass
   option_as_alt: OnlyLeft
 
 font:
@@ -41,12 +40,6 @@ colors:
     cyan:    '0x8ec07c'
     white:   '0xebdbb2'
 
-bell:
-  animation: Ease
-  duration: 250
-  color: '#666666'
-
 key_bindings:
-  - { key: Left,  mods: Alt,     chars: "\x1bb"          }
-  - { key: Right, mods: Alt,     chars: "\x1bf"          }
-  - { key: N,     mods: Command, action: CreateNewWindow }
+  - { key: Left,  mods: Alt, chars: "\x1bb" }
+  - { key: Right, mods: Alt, chars: "\x1bf" }

@@ -29,4 +29,4 @@ Host work
 	User jbainbri
 	ProxyJump work-internal-proxy
 	RequestTTY yes
-	RemoteCommand zellij attach
+	RemoteCommand tmux new-session -A
