@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
 LINKS=(
-	".hushlogin hush-login"
-	".gitconfig git-config"
-	".tmux.conf tmux-config"
-	".config/nvim neovim-config"
+	".config/git git-config"
 	".config/helix helix-config"
 	".config/alacritty alacritty-config"
+	".config/tmux tmux-config"
 	".config/zellij zellij-config"
+	".config/nvim neovim-config"
 )
 
 MACOS_LINKS=(
-	".ssh/config ssh-config"
+	".hushlogin hush-login"
 	".zshrc zshrc-config"
+	".ssh/config ssh-config"
 )
 
 if [ ! -z "$1" ] && [ "$1" = "macos" ]; then
