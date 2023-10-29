@@ -1,10 +1,12 @@
 [[language]]
-name = "rust"
-indent = { tab-width = 4, unit = "	" }
-language-server = { command = "rustup", args = ["run", "stable", "rust-analyzer"] }
-# config = { checkOnSave = { command = "clippy" } }
-
-[[language]]
 name = "cpp"
 indent = { tab-width = 4, unit = "	" }
 auto-format = true
+
+[[language]]
+name = "rust"
+indent = { tab-width = 4, unit = "	" }
+auto-format = true
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"

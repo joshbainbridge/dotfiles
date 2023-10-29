@@ -18,7 +18,7 @@ space = "all"
 tab = "all"
 
 [keys.normal]
+"space" = { E = "file_picker_in_current_buffer_directory" }
+C-g = ":toggle-option soft-wrap.enable"
+C-h = ":toggle-option lsp.display-inlay-hints"
 C-r = ":reflow"
-
-[keys.insert]
-C-n = "completion"
