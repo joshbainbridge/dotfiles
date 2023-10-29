@@ -1,3 +1,6 @@
+# Configure environment for nix
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+
 # Prevent C-D from exiting shell
 setopt IGNOREEOF
 
@@ -7,20 +10,11 @@ setopt HIST_IGNORE_DUPS
 # Disable bell when listing options
 unsetopt LIST_BEEP
 
-# Add completion for rust toolchain
-fpath+=~/.zfunc
-
 # Enabled zsh auto-completion
 autoload -U compinit && compinit
 
 # Enable coloured output for the ls command
 export CLICOLOR='Yes'
-
-# Make default CMake generator Ninja
-export CMAKE_GENERATOR='Ninja'
-
-# Add Homebrew LLVM installation to path
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 # Set default visual editor
 export VISUAL='hx'
