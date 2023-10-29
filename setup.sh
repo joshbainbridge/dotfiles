@@ -5,8 +5,6 @@ LINKS=(
 	".config/helix helix-config"
 	".config/alacritty alacritty-config"
 	".config/tmux tmux-config"
-	".config/zellij zellij-config"
-	".config/nvim neovim-config"
 )
 
 MACOS_LINKS=(
@@ -33,4 +31,3 @@ for ELEMENT in "${LINKS[@]}"; do
 	PAIR=( $ELEMENT );
 	ln -s "${PWD}/${PAIR[1]}" "${HOME}/${PAIR[0]}"
 done
-
